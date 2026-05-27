@@ -1,7 +1,7 @@
 import streamlit as st
 import requests 
 import pandas as pd
-server_loc="https://expense-tracker-project-yh3k.onrender.com"
+server_loc=st.secrets["server_url"]
 
 st.title("Expense Tracker")
 if "name" not in st.session_state:
