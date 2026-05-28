@@ -31,9 +31,6 @@ opt = st.sidebar.selectbox(
     ]
 )
 
-
-# ---------------- ADD ----------------
-
 if opt == "Add expenses":
 
     st.header("Add Expenses")
@@ -85,8 +82,6 @@ if opt == "Add expenses":
 
 
 
-# ---------------- VIEW ----------------
-
 elif opt == "View expenses":
 
     st.header("View expenses")
@@ -119,9 +114,6 @@ elif opt == "View expenses":
 
             st.error(e)
 
-
-
-# ---------------- UPDATE ----------------
 
 elif opt == "Update expenses":
 
@@ -220,10 +212,6 @@ elif opt == "Update expenses":
 
             st.error(e)
 
-
-
-# ---------------- DELETE ----------------
-
 elif opt == "Delete expenses":
 
     st.header("Delete expense")
@@ -277,10 +265,6 @@ elif opt == "Delete expenses":
 
             st.error(e)
 
-
-
-# ---------------- SEARCH ----------------
-
 elif opt == "Search expenses":
 
     st.header("Search expenses")
@@ -312,10 +296,6 @@ elif opt == "Search expenses":
         except Exception as e:
 
             st.error(e)
-
-
-
-# ---------------- SORT ----------------
 
 elif opt == "Sort Expenses":
 
